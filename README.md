@@ -124,17 +124,8 @@ Claim Risk Level: LOW / MEDIUM / HIGH
 4. **Dataset bias** — trained on one hospital system's images. Real production
    models need multi-institutional training data to generalize.
 
-These are real limitations of every production radiology AI system too —
-the paper you read from Tashkent Medical University discusses several of them.
+
 
 ---
 
-## Why this connects to Cotiviti's business
 
-Cotiviti's payment integrity products verify that billed codes are supported
-by clinical documentation. This POC demonstrates that principle applied to
-imaging: the CNN extracts a structured finding from an unstructured image
-(the same way NLP extracts findings from unstructured text), and the
-reconciliation engine then checks that finding against the claim — the
-same SUPPORTED / CONTRADICTED / UNSUPPORTED logic from the text-based
-Coding Support Validator, now extended to a second modality.
